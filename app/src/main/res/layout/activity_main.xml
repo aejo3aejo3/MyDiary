@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mydiary.MainActivity">
+
+        <Button
+            android:id="@+id/add"
+            android:onClick="onAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Added"/>
+
+        <Button
+            android:id="@+id/edit"
+            android:onClick="onEdit"
+            android:layout_toRightOf="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"/>
+
+    <!-- 透過關鍵字搜尋連絡人 -->
+    <Button
+        android:id="@+id/find"
+        android:onClick="onFind"
+        android:layout_toRightOf="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="find"/>
+
+        <ListView
+            android:id="@+id/xlv"
+            android:layout_below="@id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
